@@ -121,7 +121,7 @@ function onMessageArrived(message) {
 
             if (nurseMessage === "NORMAL") {
                 // Set the image source to the default image
-                imagePatient.src = "normal.PNG";
+                imagePatient.src = "normal.jpg";
 
                 audioSource.src = "Normal.mp3";
                 audioPlayer.load();
@@ -129,14 +129,14 @@ function onMessageArrived(message) {
 
             } else if (nurseMessage === "EMERGENCY") {
                 // Set the image source to the emergency image
-                imagePatient.src = "emergency.PNG";
+                imagePatient.src = "emergency.jpg";
 
                 audioSource.src = "Emergency.mp3";
                 audioPlayer.load();
                 audioPlayer.play();
             } else if (nurseMessage === "CONFIRM") {
                 // Set the image source to the confirm image
-                imagePatient.src = "confirm.PNG";
+                imagePatient.src = "confirm.jpg";
                 audioPlayer.pause();
             }
         } else if (topic === lightTopic) {
